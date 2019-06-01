@@ -10,6 +10,9 @@ class GroupNameTooLong(ClientError):
 class GroupDoesNotExist(ClientError):
 	pass
 
+class GroupAlreadyExists(ClientError):
+	pass
+
 class CannotRemoveSpecialGroup(ClientError):
 	pass
 
@@ -19,6 +22,15 @@ class ContactDoesNotExist(ClientError):
 class ContactAlreadyOnList(ClientError):
 	pass
 
+class NicknameExceedsLengthLimit(ClientError):
+	pass
+
+class EmptyDomainInXXL(ClientError):
+	pass
+
+class InvalidXXLPayload(ClientError):
+	pass
+
 class ContactNotOnList(ClientError):
 	pass
 
@@ -26,4 +38,25 @@ class UserDoesNotExist(ClientError):
 	pass
 
 class ContactNotOnline(ClientError):
+	pass
+
+class AuthFail(ClientError):
+	pass
+
+class NotAllowedWhileHDN(ClientError):
+	pass
+
+class NotAllowedToJoinGroupChat(ClientError):
+	pass
+
+class GroupChatDoesNotExist(ClientError):
+	pass
+
+class MemberAlreadyInGroupChat(ClientError):
+	pass
+
+class MemberAlreadyInvitedToGroupChat(ClientError):
+	pass
+
+class MemberNotInGroupChat(ClientError):
 	pass
